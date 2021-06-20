@@ -64,12 +64,12 @@ class _SusStateInfo extends State<SusScreen> {
             margin: EdgeInsets.only(left: 20, top: 20, right: 20,bottom: 0),
             child: Column(
               children: [
-                Image.asset('../assets/img/avatar.jpg', width: 350, alignment: Alignment.center,),
+                Image.asset('../assets/img/avatar.png', width: 350, alignment: Alignment.center,),
                 Align(
                   alignment: Alignment.center,
                   child: Container(
                     child: Text(
-                      'Vá até uma Unidade Básica de Saúde, levando o RG e CPF. ''\n'
+                      '\n \n Vá até uma Unidade Básica de Saúde, levando o RG e CPF. ''\n'
                           'É impresso na hora, mas caso isso não aconteça,''\n'
                           'você receberá poucos dias depois.' '\n\n\n'
                           'Também é possível fazer o cartão SUS ' '\n'
