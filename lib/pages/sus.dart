@@ -86,10 +86,7 @@ class _SusStateInfo extends State<SusScreen> {
                     textStyle: const TextStyle(fontSize: 20),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => SusScreen()),
-                    );
+
                   },
                   child: const  Text(
                     'Clique aqui e baixe o app Conecte.''\n'
