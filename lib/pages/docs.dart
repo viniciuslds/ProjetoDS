@@ -66,12 +66,12 @@ class _DocsPageState extends State<DocsScreen> {
               margin: EdgeInsets.only(left: 20, top: 10, right: 20,bottom: 0),
               child: Column(
                 children: [
-                  Image.asset('../assets/img/avatar.jpg', width: 350, alignment: Alignment.center,),
+                  Image.asset('../assets/img/avatar.png', width: 350, alignment: Alignment.center,),
                   Align(
                     alignment: Alignment.center,
                     child: Container(
                       child: Text(
-                        'Para ser atendido leve os seguintes documentos:' '\n\n\n'
+                        '\n \n Para ser atendido leve os seguintes documentos:' '\n\n\n'
                             '1. Documento de identificação com foto' '\n\n\n'
                             '2. Cartão do SUS',
                         style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black),
