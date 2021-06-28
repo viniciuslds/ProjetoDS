@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:projetods/components/bottom_nav_bar.dart';
 
 class SusScreen extends StatefulWidget {
   @override
@@ -11,31 +12,7 @@ class _SusStateInfo extends State<SusScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.green,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white.withOpacity(.60),
-        selectedFontSize: 14,
-        unselectedFontSize: 14,
-        onTap: (value) {
-          // Respond to item press.
-        },
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Inicio',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu),
-            label: 'Serviços',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.badge),
-            label: 'Perfil',
-          ),
-        ],
-      ),
+      bottomNavigationBar: BottomNavBar(),
       body: ListView(
         children: <Widget>[
           AppBar(
