@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:projetods/components/bottom_nav_bar.dart';
 import 'package:projetods/pages/sus.dart';
 
 class DocsScreen extends StatefulWidget {
@@ -13,31 +14,7 @@ class _DocsPageState extends State<DocsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: Colors.green,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white.withOpacity(.60),
-          selectedFontSize: 14,
-          unselectedFontSize: 14,
-          onTap: (value) {
-            // Respond to item press.
-          },
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Inicio',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.menu),
-              label: 'Serviços',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.badge),
-              label: 'Perfil',
-            ),
-          ],
-        ),
+        bottomNavigationBar: BottomNavBar(),
         body: ListView(
           children: <Widget>[
             AppBar(
@@ -88,8 +65,8 @@ class _DocsPageState extends State<DocsScreen> {
                         margin: EdgeInsets.only(left: 0, top: 10, right: 0,bottom: 10),
                         child: OutlinedButton.icon(
                           style: ElevatedButton.styleFrom(
-                            minimumSize: Size.zero, // <-- Add this
-                            padding: EdgeInsets.only(left: 0, top: 0, right: 20, bottom: 0), // <-- and this
+                            minimumSize: Size.zero,
+                            padding: EdgeInsets.only(left: 0, top: 0, right: 20, bottom: 0),
                           ),
                           onPressed: () {
                             Navigator.push(
@@ -100,6 +77,7 @@ class _DocsPageState extends State<DocsScreen> {
                           icon: Image.asset('../assets/img/Cartaosus.png', fit: BoxFit.cover, width: 100,  alignment: Alignment.centerLeft,),
                           label: Text("Como obter meu cartão SUS ?",
                               style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black)),
+
                         ),
                       ),
                     ],

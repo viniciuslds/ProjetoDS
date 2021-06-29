@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "image": "img/unidades/ubstaquari.jpg",
+    "name": "UBS Taquari",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "Jardim Taquari QD T31 APM 22, Palmas - TO",
+    "tiposervico": "Pediatria, Ginecologia, Clínica Geral, Enfermagem e Odontologia"
+  },
+  {
+    "id": 1,
+    "image": "img/unidades/ubs210sul.jpg",
+    "name": "USF LOIANE MORENO VIEIRA ARSE 24 (210 SUL)",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "J210 Sul (antiga Arse 24), Alameda 07",
+    "tiposervico": "Procedimentos básicos de saúde"
+  },
+  {
+    "id": 2,
+    "image": "img/unidades/ubsjose508n.jpg",
+    "name": "USF ARNE 64 (508 NORTE)",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "806 Sul - Plano Diretor Sul",
+    "tiposervico": "Saúde da Família, Clínico Geral, Ginecologista, Tratamento da Tuberculose, Saúde da Família, Clínico Geral, Ginecologista, Pré-natal/Parto e Nascimento, Tratamento da Hanseníase"
+  },
+  {
+    "id": 3,
+    "image": "img/unidades/ubs1103s.jpg",
+    "name": "Centro De Saúde Da Comunidade Satilo Alves De Sousa",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "1103 SUL , alameda 17, APM 13 - Plano Diretor Sul, Palmas - TO",
+    "tiposervico": "Pediatria, Ginecologia, Clínica Geral, Enfermagem e Odontologia"
+  },
+  {
+    "id": 4,
+    "image": "img/unidades/ubs1304s.jpg",
+    "name": "Centro de Saúde da Comunidade da 1304 Sul",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "Jardim Aureny I - Palmas - TO",
+    "tiposervico": "Tratamento da Hanseníase, Tratamento da Tuberculose, Pré-natal/Parto e Nascimento, Saúde da Família, Clínico Geral, Ginecologista"
+  },
+  {
+    "id":5,
+    "image": "img/unidades/ubsmoradadosol.jpg",
+    "name": "Centro de Saúde da Comunidade Morada do Sol",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "424, Av. Ponta Negra, 210 - St. Morada do Sol (Taquaralto), Palmas - TO",
+    "tiposervico": "Pré-natal/Parto e Nascimento, Saúde da Família, Clínico Geral, Ginecologista"
+  },
+  {
+    "id": 6,
+    "image": "img/unidades/ubsaureny1.jpg",
+    "name": "Csc Eugênio P. da Silva",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "Jardim Aureny I - Palmas - TO",
+    "tiposervico": "Pediatria, Ginecologia, Clínica Geral, Enfermagem e Odontologia"
+  },
+  {
+    "id": 7,
+    "image": "img/unidades/ubsaureny2.jpg",
+    "name": " Centro de Saúde da Comunidade Aureny II",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": "R. Osvaldo Cruz, 157-305 - Jardim Aureny II",
+    "tiposervico": "Pré-natal/Parto e Nascimento, Tratamento da Tuberculose, Saúde da Família, Clínico Geral, Ginecologista, Tratamento da Hanseníase"
+  },
+  {
+    "id": 8,
+    "image": "img/unidades/ubsliberdade.jpg",
+    "name": "Centro De Saúde Da Comunidade Liberdade",
+    "description": "Centro de Saúde, Unidade Básica",
+    "endereco": " R. Trinta e Dois, 1350-1570 - Jardim Aureny III (Taquaralto)",
+    "tiposervico": "Pré-natal/Parto e Nascimento, Tratamento da Hanseníase, Saúde da Família, Clínico Geral, Ginecologista, Tratamento da Tuberculose"
+  }
+]
