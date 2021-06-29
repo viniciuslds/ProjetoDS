@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:projetods/pages/docs.dart';
+import 'package:projetods/pages/home.dart';
+import 'package:projetods/pages/sus.dart';
+import 'package:projetods/pages/ubs.dart';
 import '../constants/constants.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -42,7 +45,7 @@ class _BottomNavBar extends State<BottomNavBar> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => DocsScreen()),
+                          MaterialPageRoute(builder: (context) => HomePage()),
                         );
                       },
                     ),
@@ -53,11 +56,55 @@ class _BottomNavBar extends State<BottomNavBar> {
           Container(
             child: Column(
               children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.menu),
+                PopupMenuButton(
+                  onSelected: (value) { // add this property
+                    if (value == 0) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => UbsPage()),
+                      );
+                    }
+                    if (value == 1) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SusScreen()),
+                      );
+                    }
+                    if (value == 2) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DocsScreen()),
+                      );
+                    }
+                  },
+
+                  icon: Icon(Icons.menu,color: Colors.white),
                   color: Colors.white,
                   tooltip: 'Serviços',
-                  onPressed: () {},
+                  itemBuilder: (BuildContext context) => <PopupMenuEntry>[
+                    const PopupMenuItem(
+                      value: 0,
+                      child: ListTile(
+                        leading: Icon(Icons.add),
+                        title: Text('UBS'),
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 1,
+                      child: ListTile(
+                        leading: Icon(Icons.anchor),
+                        title: Text('Cartão SUS'),
+
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 2,
+                      child: ListTile(
+                        leading: Icon(Icons.article),
+                        title: Text('Documentos SUS'),
+                      ),
+                    ),
+                  ],
                 ),
                 Text('Serviços',style: TextStyle( color: Colors.white)),
               ],

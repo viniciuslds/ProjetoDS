@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 
 import 'package:projetods/components/bottom_nav_bar.dart';
+import 'package:projetods/pages/ubsdetail.dart';
 
 class UbsPage extends StatelessWidget{
   @override
@@ -44,11 +45,7 @@ class UbsPage extends StatelessWidget{
                       child: Column(
                         children: [
                           ListTile(
-                            leading: CircleAvatar(
-                                backgroundImage:NetworkImage('assets/'+showData[index]['image']),
-                            radius: 30.0,
-                            backgroundColor: Colors.transparent,
-                            ), // imagem da ubs
+                           // imagem da ubs
                             title: Text(showData[index]['name']), //titulo da UBS
                             subtitle: Text( showData[index]['description'], style: TextStyle(color: Colors.black.withOpacity(0.6)), // Endereço da UBS
                             ),
@@ -56,7 +53,7 @@ class UbsPage extends StatelessWidget{
                           //COLOCAR A IMAGEM DA UBS AQUI
                           Image.asset(showData[index]['image'] ,fit: BoxFit.fitWidth),
                           Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(15),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
@@ -66,7 +63,6 @@ class UbsPage extends StatelessWidget{
                               ],
                             ),
                           ),
-
                           ButtonBar(
                             alignment: MainAxisAlignment.start,
                             children: [
@@ -75,7 +71,19 @@ class UbsPage extends StatelessWidget{
                                     primary: Colors.green
                                 ),
                                 onPressed: () {
-                                  // Perform some action
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => DetailPage(
+                                        id: showData[index]['id'],
+                                        image: showData[index]['image'],
+                                        name: showData[index]['name'],
+                                        description: showData[index]['description'],
+                                        endereco: showData[index]['endereco'],
+                                        tiposervico: showData[index]['tiposervico'],
+                                      ),
+                                    ),
+                                  );
                                 },
                                 child: const Text('Detalhes'),
                               ),
