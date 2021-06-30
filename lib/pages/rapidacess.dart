@@ -1,15 +1,11 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:projetods/pages/docs.dart';
-import 'package:projetods/pages/sus.dart';
-import 'package:projetods/pages/ubs.dart';
-
 
 class AcessoRapido extends StatelessWidget {
   const AcessoRapido({
     Key? key,
   }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -48,10 +44,10 @@ class AcessoRapido extends StatelessWidget {
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => SusScreen()),
-                              );
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(builder: (context) => SusScreen()),
+                              // );
                             },
                             child:Column(
                               children: [
@@ -188,10 +184,10 @@ class AcessoRapido extends StatelessWidget {
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => UbsPage()),
-                              );
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(builder: (context) => UbsPage()),
+                              // );
                             },
                             child:Column(
                               children: [
