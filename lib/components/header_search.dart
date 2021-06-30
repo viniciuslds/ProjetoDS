@@ -36,14 +36,14 @@ class HeaderSearch extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 Text(
-                  'Seja \n'
-                      'Bem-Vindo!',
+                  'Life \n'
+                      'SUS!',
                   style: Theme.of(context).textTheme.headline4!.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold, fontFamily:'Lato', fontSize: 35,),
 
                 ),
                 Spacer(),
-                Image.asset("../assets/img/logo.png"),
+                Image.asset("../assets/img/saudedafamilia.png"),
               ],
             ),
           ),
@@ -73,18 +73,16 @@ class HeaderSearch extends StatelessWidget {
                   Expanded(
                     child: TextField(
                       onChanged: (value) {
-
+                        value = value.toLowerCase();
+                        print(value);
                       },
                       decoration: InputDecoration(
-                        hintText: "Search",
+                        hintText: "Pesquisar",
                         hintStyle: TextStyle(
                           color: kPrimaryColor.withOpacity(0.5),
                         ),
                           focusedBorder: InputBorder.none,
                           enabledBorder: InputBorder.none,
-                        // surffix isn't working properly  with SVG
-                        // thats why we use row
-                        // suffixIcon: SvgPicture.asset("assets/icons/search.svg"),
                       ),
                     ),
                   ),

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projetods/components/bottom_nav_bar.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SusScreen extends StatefulWidget {
   @override
@@ -8,6 +9,7 @@ class SusScreen extends StatefulWidget {
     return _SusStateInfo();
   }
 }
+const _url = 'https://play.google.com/store/apps/details?id=br.gov.datasus.cnsdigital';
 class _SusStateInfo extends State<SusScreen> {
   @override
   Widget build(BuildContext context) {
@@ -62,9 +64,7 @@ class _SusStateInfo extends State<SusScreen> {
                   style: TextButton.styleFrom(
                     textStyle: const TextStyle(fontSize: 20),
                   ),
-                  onPressed: () {
-
-                  },
+                  onPressed: _launchURL,
                   child: const  Text(
                     'Clique aqui e baixe o app Conecte.''\n'
                         'SUS e tenha acesso ao cartão e,''\n'
@@ -80,3 +80,5 @@ class _SusStateInfo extends State<SusScreen> {
     );
   }
 }
+void _launchURL() async =>
+    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';

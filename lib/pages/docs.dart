@@ -24,7 +24,7 @@ class _DocsPageState extends State<DocsScreen> {
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 20, top: 0, right: 0,bottom: 0),
-                      child: Text("Doocumentação"),
+                      child: Text("Documentação"),
                     )
                   ],
                 ),

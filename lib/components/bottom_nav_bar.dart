@@ -77,7 +77,6 @@ class _BottomNavBar extends State<BottomNavBar> {
                       );
                     }
                   },
-
                   icon: Icon(Icons.menu,color: Colors.white),
                   color: Colors.white,
                   tooltip: 'Serviços',
@@ -85,14 +84,14 @@ class _BottomNavBar extends State<BottomNavBar> {
                     const PopupMenuItem(
                       value: 0,
                       child: ListTile(
-                        leading: Icon(Icons.add),
+                        leading: Icon(Icons.local_hospital),
                         title: Text('UBS'),
                       ),
                     ),
                     const PopupMenuItem(
                       value: 1,
                       child: ListTile(
-                        leading: Icon(Icons.anchor),
+                        leading: Icon(Icons.credit_card_outlined),
                         title: Text('Cartão SUS'),
 
                       ),
